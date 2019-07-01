@@ -44,13 +44,11 @@ export default class Main extends React.Component {
   }
 
   render() {
-    const { navigate } = this.props.navigation;
-
     return (
       //
       <Container>
         <ScrollView>
-          <Header title="Heder da Aplicação novo" />
+          <Header title="Jefferson Silva de Souza" />
           <ScrollView>
             <List names={this.state.names} setselectedItem={this.setselectedItem} />
           </ScrollView>
@@ -73,7 +71,7 @@ export default class Main extends React.Component {
               precision: 2,
               separator: ',',
               delimiter: '.',
-              unit: 'R$ ',
+              unit: 'R$',
               suffixUnit: '',
             }}
             value={this.state.advanced}
